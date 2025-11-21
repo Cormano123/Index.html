@@ -1,0 +1,325 @@
+# Index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricista del Sur | Recableos y Obras Eléctricas en Zona Sur</title>
+    <meta name="description" content="Recableos completos, obras nuevas, tableros y urgencias eléctricas en Zona Sur. Instalaciones seguras y pensadas para el futuro.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --blue: #2563eb;
+            --blue-dark: #1d4ed8;
+            --gray: #374151;
+            --gray-light: #f3f4f6;
+            --white: #ffffff;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--gray); background: var(--white); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        h1, h2 { color: var(--blue-dark); }
+        h1 { font-size: 2.8rem; line-height: 1.2; }
+        h2 { font-size: 2.2rem; margin-bottom: 1.5rem; }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(rgba(37,99,235,0.9), rgba(29,78,216,0.95)), url('https://images.unsplash.com/photo-1621905252472-f6455007c7da?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 140px 20px 100px;
+        }
+        .hero h1 { color: white; margin-bottom: 1rem; }
+        .hero p { font-size: 1.3rem; max-width: 800px; margin: 0 auto 2rem; }
+        .badges { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin: 2rem 0; }
+        .badge { background: rgba(255,255,255,0.2); padding: 10px 20px; border-radius: 50px; backdrop-filter: blur(5px); }
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            margin: 10px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background: #10b981;
+            color: white;
+        }
+        .btn-primary:hover { background: #059669; transform: translateY(-3px); }
+        .btn-secondary {
+            background: white;
+            color: var(--blue-dark);
+        }
+        .btn-secondary:hover { background: #f3f4f6; transform: translateY(-3px); }
+        
+        /* Secciones */
+        section { padding: 80px 0; }
+        .bg-light { background: var(--gray-light); }
+        .text-center { text-align: center; }
+        ul { margin: 1.5rem 0; padding-left: 1.5rem; }
+        li { margin-bottom: 0.8rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 3rem; }
+        .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
+        .img-full { width: 100%; border-radius: 12px; margin: 2rem 0; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+        
+        /* FAQ */
+        .faq { background: white; padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(0,0,0,0.06); }
+        .faq h3 { color: var(--blue-dark); margin-bottom: 0.5rem; }
+        
+        /* Footer CTA */
+        .footer-cta {
+            background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .footer-cta h2 { color: white; }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2.3rem; }
+            h2 { font-size: 1.9rem; }
+            .hero { padding: 100px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="container">
+            <h1>Recableos y obras eléctricas pensadas para el futuro de tu casa o negocio</h1>
+            <p>Soy Electricista del Sur y me dedico a rediseñar instalaciones viejas y a hacer obras nuevas bien hechas, para que dejes de vivir con parches eléctricos y empieces a vivir tranquilo.</p>
+            
+            <div class="badges">
+                <span class="badge">Electricista profesional</span>
+                <span class="badge">Recableos completos y obras nuevas</span>
+                <span class="badge">Tableros y protecciones actualizadas</span>
+                <span class="badge">Zonas sur y alrededores</span>
+            </div>
+            
+            <a href="https://wa.me/54113561978?text=¡Hola!%20Vi%20tu%20web%20y%20quiero%20consultar%20por%20un%20recableo/presupuesto" class="btn btn-primary">Escribime por WhatsApp</a>
+            <a href="https://wa.me/54113561978?text=¡Hola!%20Quiero%20pedir%20un%20presupuesto%20sin%20cargo" class="btn btn-secondary">Pedir presupuesto sin cargo</a>
+        </div>
+    </header>
+
+    <!-- EL PROBLEMA -->
+    <section>
+        <div class="container text-center">
+            <h2>Tu instalación fue pensada para otra época, pero tu consumo es de hoy</h2>
+            <p style="max-width: 900px; margin: 2rem auto; font-size: 1.1rem;">
+                Muchas casas, PH y locales siguen con el mismo cableado de hace 20 o 30 años.<br>
+                Antes había una heladera, una tele y alguna que otra cosa más. Hoy tenés aire acondicionado, horno eléctrico, microondas, computadoras, cargadores, herramientas, cámaras, luces LED por todos lados…
+            </p>
+            <img src="https://images.unsplash.com/photo-1621905252472-f6455007c7da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Instalación eléctrica vieja" class="img-full">
+            <p style="max-width: 800px; margin: 2rem auto;">
+                Esa instalación antigua no fue diseñada para todo eso. ¿El resultado?<br>
+                Térmicas que saltan todo el tiempo • Zapatillas sobrecargadas • Enchufes que se calientan o se queman • Riesgo real de cortocircuitos y de incendio
+            </p>
+            <p><strong>Mi trabajo como Electricista del Sur es simple: transformar esa instalación vieja y parcheada en una instalación segura, ordenada y preparada para los próximos años.</strong></p>
+        </div>
+    </section>
+
+    <!-- RECABLEADOS -->
+    <section class="bg-light">
+        <div class="container">
+            <h2 class="text-center">Recableos completos: dejar de parchar y hacer las cosas bien de una vez</h2>
+            <div class="grid">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1621905252507-b4a1d5b9a014?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Recableado completo" class="img-full">
+                </div>
+                <div class="card">
+                    <p>Si tu casa o tu PH están “remendados” eléctricamente, cada vez que enchufás algo nuevo sentís que estás jugando a la ruleta rusa.</p>
+                    <p>En los recableos, mi objetivo es ordenar y dimensionar la instalación para que aguante tu consumo real, sin improvisar.</p>
+                    <ul>
+                        <li>Revisión del cableado existente y detección de puntos críticos</li>
+                        <li>Separación de circuitos de iluminación, tomas y consumos grandes</li>
+                        <li>Nuevas líneas para cocina, aire acondicionado, oficina en casa o taller</li>
+                        <li>Renovación de cañerías, cajas, conexiones y protecciones donde haga falta</li>
+                        <li>Tablero actualizado, etiquetado y pensado para futuras ampliaciones</li>
+                    </ul>
+                    <p style="margin-top: 2rem;">
+                        <a href="https://wa.me/54113561978?text=¡Hola!%20Estoy%20pensando%20en%20recablear%20mi%20casa/PH" class="btn btn-primary">Contame tu caso y te asesoro</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OBRAS NUEVAS -->
+    <section>
+        <div class="container">
+            <h2 class="text-center">Obras nuevas y ampliaciones: instalación eléctrica desde cero, sin sorpresas</h2>
+            <div class="grid">
+                <div class="card">
+                    <p>Si estás construyendo, reformando o ampliando, este es el mejor momento para pensar bien la instalación eléctrica. Lo que se hace ahora, después es muy caro de corregir.</p>
+                    <ul>
+                        <li>Diseño de cañerías y puntos de conexión según plano y uso real</li>
+                        <li>Tableros seccionales y generales, con protecciones adecuadas</li>
+                        <li>Circuitos dedicados para aires, hornos, bombas, freezers, taller, etc.</li>
+                        <li>Coordinación con otros rubros para evitar roturas innecesarias</li>
+                        <li>Instalación pensada para crecer: futuras cargas, nuevas tomas, más iluminación</li>
+                    </ul>
+                    <p>La idea es que, una vez terminada la obra, puedas vivir y trabajar tranquilo, sin cables colgando ni “arreglos momentáneos” que se vuelven eternos.</p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1581092580490-4e63e9f3a95c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Obra nueva eléctrica" class="img-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TABLEROS Y SEGURIDAD -->
+    <section class="bg-light">
+        <div class="container text-center">
+            <h2>Tableros, protecciones y normalización: la base de una instalación segura</h2>
+            <img src="https://images.unsplash.com/photo-1621905252416-9e25f17756e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Tablero eléctrico moderno" class="img-full" style="max-width: 900px;">
+            <div style="max-width: 800px; margin: 2rem auto;">
+                <p>El tablero es el corazón de tu instalación. Si está mal armado, con térmicas viejas o todo mezclado, por más que el resto “ande”, no está seguro.</p>
+                <ul style="text-align: left; display: inline-block;">
+                    <li>Relevamiento del tablero actual y del estado de la instalación</li>
+                    <li>Cambio o rearmado de tablero: térmicas, disyuntor, DPS, seccionamientos</li>
+                    <li>Medición y mejora de puesta a tierra</li>
+                    <li>Adecuación de circuitos sobrecargados</li>
+                    <li>Informes básicos del trabajo realizado y del estado de la instalación</li>
+                </ul>
+                <p style="margin-top: 2rem;">
+                    <a href="https://wa.me/54113561978?text=¡Hola!%20Necesito%20actualizar%20mi%20tablero%20o%20dejar%20la%20instalación%20en%20regla" class="btn btn-primary">Pedime una visita de diagnóstico</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMERCIOS -->
+    <section>
+        <div class="container">
+            <h2 class="text-center">Para tu negocio: que la electricidad no frene tus ventas</h2>
+            <div class="grid">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1581092160607-36a2c0b3cf9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tablero trifásico comercio" class="img-full">
+                </div>
+                <div class="card">
+                    <p>Si tu local, galpón o taller se queda sin luz, no solo es incómodo: perdés ventas, producción y, a veces, mercadería.</p>
+                    <ul>
+                        <li>Mantenimiento eléctrico de tableros y circuitos</li>
+                        <li>Mejora y recambio de iluminación a LED</li>
+                        <li>Tableros trifásicos y líneas de fuerza para máquinas y equipos</li>
+                        <li>Adaptación de instalaciones para nuevas maquinarias o ampliaciones</li>
+                    </ul>
+                    <p style="margin-top: 2rem;">
+                        <a href="https://wa.me/54113561978?text=¡Hola!%20Tengo%20un%20negocio%20y%20necesito%20mejorar%20la%20instalación%20eléctrica" class="btn btn-primary">Contame de qué rubro es tu negocio</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- URGENCIAS -->
+    <section class="bg-light">
+        <div class="container text-center">
+            <h2>¿Tenés una urgencia eléctrica ahora?</h2>
+            <p style="max-width: 800px; margin: 2rem auto;">
+                Aunque mi foco está en recableos y obras completas, sé que a veces las cosas se complican de un momento a otro:<br>
+                Cortes de luz • Disyuntor que no sube • Enchufes que chispean o se calientan
+            </p>
+            <p>Según la zona y la disponibilidad del día, también puedo ayudarte con urgencias eléctricas.</p>
+            <a href="https://wa.me/54113561978?text=¡URGENCIA!%20[Describí%20qué%20te%20pasa%20y%20tu%20dirección]" class="btn btn-primary" style="background:#ef4444;">Escribime ahora por WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- CÓMO TRABAJO -->
+    <section>
+        <div class="container text-center">
+            <h2>¿Cómo es trabajar conmigo?</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3 style="font-size:1.4rem; color:var(--blue-dark);">1. Me contás tu caso</h3>
+                    <p>Por WhatsApp o formulario, me explicás qué necesitás. Si hace falta, te pido fotos o un video.</p>
+                </div>
+                <div class="card">
+                    <h3 style="font-size:1.4rem; color:var(--blue-dark);">2. Visita y diagnóstico</h3>
+                    <p>Coordinamos día y horario. Voy al lugar, reviso todo y te explico en simple qué conviene hacer.</p>
+                </div>
+                <div class="card">
+                    <h3 style="font-size:1.4rem; color:var(--blue-dark);">3. Presupuesto claro y trabajo por etapas</h3>
+                    <p>Te paso presupuesto detallado. Si es grande, lo dividimos por etapas y vamos avanzando.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POR QUÉ ELEGIRME -->
+    <section class="bg-light">
+        <div class="container text-center">
+            <h2>¿Por qué confiar en Electricista del Sur?</h2>
+            <div class="grid">
+                <div class="card">
+                    <ul style="text-align:left;">
+                        <li>Te hablo en criollo: te explico todo sin vueltas</li>
+                        <li>Presupuesto claro desde el primer día</li>
+                        <li>Respeto por tu casa y tu tiempo</li>
+                        <li>Instalaciones pensadas a futuro, no “apaños”</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+        <div class="container">
+            <h2 class="text-center">Preguntas que me hacen seguido</h2>
+            <div class="grid">
+                <div class="faq">
+                    <h3>¿Cuánto sale recablear mi casa o mi PH?</h3>
+                    <p>Depende del tamaño, del estado actual y de lo que quieras incorporar. Siempre hago una visita de diagnóstico y te paso presupuesto claro.</p>
+                </div>
+                <div class="faq">
+                    <h3>¿Podés hacer el trabajo por etapas?</h3>
+                    <p>Sí, es lo más común en recableos grandes para que sea más llevadero en plata y molestias.</p>
+                </div>
+                <div class="faq">
+                    <h3>¿Tenés matrícula?</h3>
+                    <p>Sí, soy electricista matriculado y trabajo según normas vigentes.</p>
+                </div>
+                <div class="faq">
+                    <h3>¿Incluís materiales?</h3>
+                    <p>En la mayoría de los casos cotizo mano de obra + materiales. Si preferís comprar algo vos, también se puede coordinar.</p>
+                </div>
+                <div class="faq">
+                    <h3>¿Dás garantía?</h3>
+                    <p>Sí, todos los trabajos tienen garantía sobre la mano de obra.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>¡Es el momento de tener la instalación eléctrica que tu casa o negocio se merece!</h2>
+            <p style="font-size:1.3rem; margin:2rem 0;">Escribime, contame tu situación y armamos el plan perfecto.</p>
+            <a href="https://wa.me/54113561978?text=¡Hola!%20Vi%20tu%20web%20y%20quiero%20hablar%20de%20mi%20instalación%20eléctrica" class="btn btn-primary" style="background:#10b981; font-size:1.2rem; padding:18px 40px;">Escribime por WhatsApp</a>
+            <a href="https://wa.me/54113561978?text=¡Hola!%20Quiero%20pedir%20presupuesto%20sin%20cargo" class="btn btn-secondary" style="background:white; color:var(--blue-dark); font-size:1.2rem; padding:18px 40px;">Pedir presupuesto sin cargo</a>
+        </div>
+    </section>
+
+    <script>
+        // Animación suave al hacer scroll
+        document.addEventListener("scroll", function() {
+            document.querySelectorAll('.card, .faq, .badge').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    el.style.opacity = "1";
+                    el.style.transform = "translateY(0)";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
